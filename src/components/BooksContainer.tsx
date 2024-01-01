@@ -15,7 +15,7 @@ interface BooksInfoProps {
 const BooksContainer = ({name, image, sinopse, date, comments}: BooksInfoProps) => {
 	return (
 		<>
-			<div className="flex max-w-lg gap-6 my-12">
+			<div className="flex max-w-lg justify-between px-2">
 				<div className="overflow-hidden rounded-2xl group/bookImg">
 					<Image
 						src={`/${image}`}
@@ -26,7 +26,7 @@ const BooksContainer = ({name, image, sinopse, date, comments}: BooksInfoProps) 
 					/>
 				</div>
 
-				<div className="relative cursor-default w-3/5 flex justify-center flex-col gap-3">
+				<div className="cursor-default w-3/5 flex justify-center flex-col gap-3">
 					<h4 className='text-2xl'>{name}</h4>
 
 					<p className="text-sm">{date} | {comments} resenhas</p>
