@@ -18,7 +18,20 @@ const config = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				'background-white': 'url(/noisy-white.png)',
+				'background-dark': 'url(/noisy-dark.png)',
+			},
 			colors: {
+				primaryWhite: 'rgb(228, 228, 231)',
+				primaryDark: 'rgb(31, 41, 55)',
+				primaryGray: 'rgb(75, 85, 99)',
+
+				colorPrimary: '#ff426f',
+				colorPrimaryDarker: '#ad2343',
+				colorSecondary: '#9c4eff',
+				colorSecondaryDarker: '#5d26a6',
+				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
