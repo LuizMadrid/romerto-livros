@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { ComponentPropsWithoutRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 
@@ -14,7 +15,7 @@ function Button({ className, variant = 'primary', ...props }: ButtonProps) {
 		sidebar: 'cursor-pointer p-2 gap-4 group-hover:bg-gray-400/20 rounded-lg w-full justify-center group-hover/sidebar:justify-start items-center',
 	};
 
-	const _className = twMerge(variantClasses[variant], 'flex appearance-none rounded-md font-semibold transition-all duration-[0.3s] ease-[ease-in-out] hover:transition-all hover:duration-[0.3s] hover:ease-[ease-in-out]', className);
+	const _className = twMerge(variantClasses[variant], 'flex appearance-none rounded-md font-semibold transition-all hover:transition-all', className);
 
 	return (
 		<button className={_className} {...props}>
