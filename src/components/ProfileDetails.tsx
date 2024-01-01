@@ -1,17 +1,17 @@
-"use client"
+'use client';
 
 import React from 'react';
 import Image from 'next/image';
 
 import { ModeToggle } from './ToggleTheme';
-import Button from '@/components/Button';
+// import Button from '@/components/Button';
 
 const ProfileDetails = () => {
-  return (
-    <>
-      <div className='flex justify-center items-center text-white gap-4 mt-6'>
+	return (
+		<>
+			<div className='flex justify-center items-center text-white gap-4 mt-6'>
 
-        {/* <AiOutlineMenu onClick={(e) => handleDropdownFocus(open)} className="cursor-pointer text-xl" />
+				{/* <AiOutlineMenu onClick={(e) => handleDropdownFocus(open)} className="cursor-pointer text-xl" />
         
         {menuIsOpen && (
           <div className="z-50 absolute top-[66px] right-28 2xl:right-11 bg-white rounded-lg shadow-md gap-4 dark:bg-darkBGLighter after:border-l-[10px] after:border-r-[10px] after:border-t-[10px] after:border-transparent after:border-t-white dark:after:border-t-darkBGLighter after:absolute after:rotate-180 after:-top-2 after:left-20 2xl:after:left-2">
@@ -52,21 +52,21 @@ const ProfileDetails = () => {
           </div>
         )} */}
 
-        <ModeToggle className={'text-primaryGray dark:text-white hover:text-primaryGray dark:hover:text-white'} />
+				<ModeToggle className={'text-primaryGray dark:text-white hover:text-primaryGray dark:hover:text-white'} />
       
-        <Image
-          src={'/test_photo.jpeg'}
-          width={40}
-          height={40}
-          className='rounded-full h-10 w-h-10 mx-auto'
-          style={{
-            objectFit: "cover",
-          }}
-          alt='Imagem Usuário'
-        />
-      </div>
-    </>
-  );
+				<Image
+					src={'/test_photo.jpeg'}
+					width={40}
+					height={40}
+					className='rounded-full h-10 w-h-10 mx-auto'
+					style={{
+						objectFit: 'cover',
+					}}
+					alt='Imagem Usuário'
+				/>
+			</div>
+		</>
+	);
 };
 
 export default ProfileDetails;
