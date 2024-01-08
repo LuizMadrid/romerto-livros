@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Sidebar from '@/components/Sidebar';
 import ProfileDetails from '@/components/ProfileDetails';
-import BooksCarousel from './Sections/BooksCarousel';
+import DailyBooks from './HomeSections/TrendingDaily/DailyBooks';
 
 export default function Home() {
 	return (
@@ -16,8 +16,8 @@ export default function Home() {
 							<ProfileDetails />
 						</div>
 
-						<div className='flex flex-col justify-center items-center'>
-							<BooksCarousel />
+						<div>
+							<DailyBooks />
 						</div>
 					</div>
 				</div>

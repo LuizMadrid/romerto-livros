@@ -2,34 +2,34 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Button from './Button';
+import Button from '@/components/Button';
 
 interface BooksInfoProps {
 	name: string;
 	image: string;
 	sinopse: string;
 	date: number;
-	comments: number;
+	edition: number;
 }
 
-const BooksContainer = ({name, image, sinopse, date, comments}: BooksInfoProps) => {
+const BooksContainer = ({ name, image, sinopse, date, edition }: BooksInfoProps) => {
 	return (
 		<>
-			<div className="flex max-w-lg justify-between px-2">
+			<div className="flex w-[28rem] h-72 justify-between px-2">
 				<div className="overflow-hidden rounded-2xl group/bookImg">
 					<Image
-						src={`/${image}`}
-						className='h-full object-cover transition-all group-hover/bookImg:scale-110 group-hover/bookImg:transition-all' 
+						src={image}
+						className='h-full transition-all group-hover/bookImg:scale-105 group-hover/bookImg:transition-all' 
 						width={160}
 						height={256}
 						alt={'Falha ao carregar imagem.'}
 					/>
 				</div>
 
-				<div className="cursor-default w-3/5 flex justify-center flex-col gap-3">
-					<h4 className='text-2xl'>{name}</h4>
+				<div className="cursor-default w-3/5 flex justify-between flex-col gap-3">
+					<h4 className='text-2xl truncate'>{name}</h4>
 
-					<p className="text-sm">{date} | {comments} resenhas</p>
+					<p className="text-sm">Publicado em: {date} | {edition} edição/ões</p>
 					<p className="text-sm text-justify indent-5">
 						{sinopse}
 					</p>
