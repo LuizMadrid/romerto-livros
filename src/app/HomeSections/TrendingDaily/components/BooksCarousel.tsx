@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import CallBooksAPI from './CallBooksAPI';
 
@@ -16,9 +14,7 @@ const BooksCarousel = () => {
 			<Carousel 
 				className='flex justify-center items-center gap-2 mx-[10%]'
 				opts={{
-					align: 'start',
 					dragFree: true,
-					loop: true,
 				}}>
 				<CarouselPrevious />
 

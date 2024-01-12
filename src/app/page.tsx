@@ -11,12 +11,12 @@ export default function Home() {
 				<Sidebar />
 			
 				<div className='text-black dark:text-white h-screen w-screen overflow-y-scroll overflow-x-hidden'>
-					<div className='ml-[5%] mr-[2%]'>
+					<div className='ml-[5%] mr-[2%] flex flex-col'>
 						<div className='flex justify-end items-center'>
 							<ProfileDetails />
 						</div>
 
-						<div>
+						<div className='mt-52'>
 							<DailyBooks />
 						</div>
 					</div>
