@@ -16,7 +16,7 @@ export default function Home() {
 							<ProfileDetails />
 						</div>
 
-						<div className='mt-52'>
+						<div className='mt-[2%]'>
 							<DailyBooks />
 						</div>
 					</div>

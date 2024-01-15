@@ -23,12 +23,19 @@ const config = {
 				'background-dark': 'url(/noisy-dark.png)',
 			},
 			colors: {
-				primaryWhite: 'rgb(228, 228, 231)',
-				primaryDark: 'rgb(31, 41, 55)',
-				primaryGray: 'rgb(75, 85, 99)',
+				primaryWhite: '#efefef',
+				primaryWhiteDarker: '#eaeaea',
 
+				primaryDarkLighter: '#394d66',
+				primaryDark: '#1f2a38',
+
+				primaryGray: '#4c5663',
+				
+				colorPrimaryLighter: '#e88098',
 				colorPrimary: '#ff426f',
 				colorPrimaryDarker: '#ad2343',
+
+				colorSecondaryLighter: '#a87be3',
 				colorSecondary: '#9c4eff',
 				colorSecondaryDarker: '#5d26a6',
 				
