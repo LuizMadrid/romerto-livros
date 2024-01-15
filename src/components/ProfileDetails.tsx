@@ -17,7 +17,7 @@ const ProfileDetails = () => {
 					src={'/test_photo.jpeg'}
 					width={40}
 					height={40}
-					className='rounded-full h-10 w-h-10 mx-auto'
+					className='rounded-full h-10 w-10 mx-auto'
 					style={{
 						objectFit: 'cover',
 					}}
