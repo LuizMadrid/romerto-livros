@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Button from './Button';
-import { Separator } from './ui/separator';
+import { Separator } from '../ui/separator';
 
-import { PiCoffeeDuotone, PiBooksDuotone, PiHouseDuotone, PiUserDuotone, PiInfoDuotone, PiNutDuotone } from 'react-icons/pi';
+import { PiCoffeeDuotone, PiBooksDuotone, PiHouseDuotone, PiUserDuotone, PiInfoDuotone, PiNutDuotone, PiCodeBlockDuotone } from 'react-icons/pi';
 
 const Sidebar = () => {
 	return (
@@ -13,7 +13,7 @@ const Sidebar = () => {
 			<div className='h-screen z-50 flex justify-center items-start group/sidebar'>
 
 				<div className='h-full bg-primaryWhiteDarker dark:bg-primaryDark rounded-r-xl text-base flex flex-col justify-between absolute top-0 left-0 group-hover/sidebar:absolute group-hover/sidebar:top-0 group-hover/sidebar:left-0'>
-					<ul className='text-gray-500 dark:text-gray-300 font-bold w-14 group-hover/sidebar:w-52 transition-all duration-75 group-hover/sidebar:transition-all group-hover/sidebar:duration-200 group-hover/sidebar:truncate flex flex-col gap-4 p-2'>
+					<ul className='text-gray-500 dark:text-gray-300 font-bold w-14 group-hover/sidebar:w-52 transition-all duration-150 group-hover/sidebar:transition-all group-hover/sidebar:duration-200 group-hover/sidebar:truncate flex flex-col gap-4 p-2'>
             
 						<Link
 							href={'/'}
@@ -95,9 +95,20 @@ const Sidebar = () => {
 
 						<Separator className='bg-primaryGray' />
 
+						<li className='group'>
+							<Link href={'/nao-existe'}>
+
+								<Button variant='sidebar'>
+									<PiCodeBlockDuotone className='min-w-6 min-h-6 group-hover:text-primary dark:group-hover:text-primaryLighter' />
+									<span className='hidden group-hover/sidebar:block'>404</span>
+								</Button>
+
+							</Link>
+						</li>
+
 					</ul>
 
-					<ul className='text-gray-500 dark:text-gray-300 font-bold w-14 group-hover/sidebar:w-52 transition-all duration-75 group-hover/sidebar:transition-all group-hover/sidebar:duration-200 group-hover/sidebar:truncate flex flex-col gap-4 p-2'>
+					<ul className='text-gray-500 dark:text-gray-300 font-bold w-14 group-hover/sidebar:w-52 transition-all duration-150 group-hover/sidebar:transition-all group-hover/sidebar:duration-200 group-hover/sidebar:truncate flex flex-col gap-4 p-2'>
 						<Separator className='bg-primaryGray' />
             
 						<li className='group'>

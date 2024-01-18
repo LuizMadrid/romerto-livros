@@ -14,7 +14,7 @@ const ProfileDetails = () => {
 				<ModeToggle className={'text-primaryGray dark:text-white hover:text-primaryGray dark:hover:text-white'} />
       
 				<Image
-					src={'/test_photo.jpeg'}
+					src={'https://avatars.githubusercontent.com/u/125223185?s=400&u=a7795520bfbb74c00babf7a29f0a119474fac413&v=4'}
 					width={40}
 					height={40}
 					className='rounded-full h-10 w-10 mx-auto'
