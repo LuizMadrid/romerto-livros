@@ -1,9 +1,29 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
+const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ['covers.openlibrary.org', 'avatars.githubusercontent.com', 'https://pixabay.com/vectors/blank-profile-picture-mystery-man-973460/'],
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'covers.openlibrary.org',
+				port: '',
+				pathname: '/b/id/**'
+			},
+			{
+				protocol: 'https',
+				hostname: 'islandpress.org',
+				port: '',
+				pathname: '/sites/default/files/**'
+			},
+			{
+				protocol: 'https',
+				hostname: 'avatars.githubusercontent.com',
+				port: '',
+				pathname: '/u/**'
+			},
+		]
 	},
 };
+
+// eslint-disable-next-line no-undef
+module.exports = nextConfig;
