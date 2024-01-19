@@ -1,5 +1,5 @@
 import React from 'react';
-import BooksCarousel from './components/BooksCarousel';
+import BooksCarousel from './BooksCarousel';
 
 const DailyBooks = () => {
 	return (
