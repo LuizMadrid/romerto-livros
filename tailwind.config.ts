@@ -22,6 +22,15 @@ const config = {
 				'background-white': 'url(/noisy-white.png)',
 				'background-dark': 'url(/noisy-dark.png)',
 			},
+			screens: {
+				sm: '470px',
+				'1sm': '570px',
+				'2sm': '640px',
+				'2md': '960px',
+				'2xl': '1440px',
+				'3xl': '1536px',
+				'4xl': '1880px',
+			},
 			colors: {
 				primaryWhite: '#efefef',
 				primaryWhiteDarker: '#eaeaea',
@@ -73,11 +82,6 @@ const config = {
 					foreground: 'hsl(var(--card-foreground))',
 				},
 			},
-			// borderRadius: {
-			// 	lg: 'var(--radius)',
-			// 	md: 'calc(var(--radius) - 2px)',
-			// 	sm: 'calc(var(--radius) - 4px)',
-			// },
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
