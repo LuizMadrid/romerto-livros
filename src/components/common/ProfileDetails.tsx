@@ -8,8 +8,8 @@ import { ModeToggle } from './ToggleTheme';
 
 const ProfileDetails = () => {
 	return (
-		<>
-			<div className='flex justify-center items-center text-white gap-4 mt-6'>
+		<div className='flex items-center justify-end backdrop-blur-0'>
+			<div className='flex text-white gap-4 my-3'>
         
 				<ModeToggle className={'text-primaryGray dark:text-white hover:text-primaryGray dark:hover:text-white'} />
       
@@ -24,7 +24,7 @@ const ProfileDetails = () => {
 					alt='Imagem Usuário'
 				/>
 			</div>
-		</>
+		</div>
 	);
 };
 

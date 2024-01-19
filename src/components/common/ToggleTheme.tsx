@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Moon, Sun } from 'lucide-react';
+import { PiSunDuotone, PiMoonStarsDuotone } from 'react-icons/pi';
 import { useTheme } from 'next-themes';
 
 import { Button } from '@/components/ui/button';
@@ -22,9 +22,9 @@ export function ModeToggle({className}: customClassNameProps) {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant="outline" size="icon" className={`rounded-lg scale-90 ${className}`}>
-					<Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-					<Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+				<Button variant="outline" size="icon" className={`rounded-md ${className}`}>
+					<PiSunDuotone className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+					<PiMoonStarsDuotone className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
 					<span className="sr-only">Mudança de Tema</span>
 				</Button>
 			</DropdownMenuTrigger>

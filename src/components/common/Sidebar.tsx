@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Button from './Button';
 import { Separator } from '../ui/separator';
 
-import { PiCoffeeDuotone, PiBooksDuotone, PiHouseDuotone, PiUserDuotone, PiInfoDuotone, PiNutDuotone, PiCodeBlockDuotone } from 'react-icons/pi';
+import { PiCoffeeDuotone, PiBooksDuotone, PiHouseDuotone, PiUserDuotone, PiInfoDuotone, PiNutDuotone, PiClockCounterClockwiseDuotone } from 'react-icons/pi';
 
 const Sidebar = () => {
 	return (
@@ -38,7 +38,7 @@ const Sidebar = () => {
 
 						<li className='group'>
 							<Link 
-								href={'/'}>
+								href={'/home'}>
 
 								<Button variant='sidebar'>
 									<PiHouseDuotone className='min-w-6 min-h-6 group-hover:text-primary dark:group-hover:text-primaryLighter' />
@@ -96,11 +96,11 @@ const Sidebar = () => {
 						<Separator className='bg-primaryGray' />
 
 						<li className='group'>
-							<Link href={'/nao-existe'}>
+							<Link href={'/login'}>
 
 								<Button variant='sidebar'>
-									<PiCodeBlockDuotone className='min-w-6 min-h-6 group-hover:text-primary dark:group-hover:text-primaryLighter' />
-									<span className='hidden group-hover/sidebar:block'>404</span>
+									<PiClockCounterClockwiseDuotone className='min-w-6 min-h-6 group-hover:text-primary dark:group-hover:text-primaryLighter' />
+									<span className='hidden group-hover/sidebar:block'>Login</span>
 								</Button>
 
 							</Link>
