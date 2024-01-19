@@ -49,6 +49,7 @@ const Carousel = React.forwardRef<
 			opts,
 			setApi,
 			plugins,
+			// eslint-disable-next-line react/prop-types
 			className,
 			children,
 			...props
@@ -173,6 +174,7 @@ CarouselContent.displayName = 'CarouselContent';
 const CarouselItem = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
+// eslint-disable-next-line react/prop-types
 >(({ className, ...props }, ref) => {
 	const { orientation } = useCarousel();
 
