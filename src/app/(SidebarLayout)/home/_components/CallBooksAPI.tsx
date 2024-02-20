@@ -1,9 +1,9 @@
 import React, { Key } from 'react';
-import BooksContainer from './BooksContainer';
+import { BooksContainer } from './BooksContainer';
 
 import { CarouselItem } from '@/components/ui/carousel';
 
-const CallBooksAPI = () => {
+export const CallBooksAPI = () => {
 	const fetchBooks = async () => {
 		try {
 			const response = await fetch('https://openlibrary.org/trending/daily.json');
@@ -37,5 +37,3 @@ const CallBooksAPI = () => {
 
 	return renderBooks();
 };
-
-export default CallBooksAPI;

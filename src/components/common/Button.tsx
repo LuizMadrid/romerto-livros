@@ -6,7 +6,7 @@ interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
   variant?: 'primary' | 'secondary' | 'outlinedPrimary' | 'outlinedSecondary' | 'login' | 'sidebar' | 'icon' | 'empty';
 }
 
-function Button({ className, variant = 'primary', ...props }: ButtonProps) {
+export function Button({ className, variant = 'primary', ...props }: ButtonProps) {
 	const variantClasses = {
 		primary: 'text-white py-2 px-4 text-sm gap-2 uppercase bg-colorPrimary hover:bg-colorPrimaryDarker items-center justify-center',
 		secondary: 'text-white py-2 px-4 text-sm gap-2 uppercase bg-colorSecondary hover:bg-colorSecondaryDarker items-center justify-center',
@@ -25,5 +25,3 @@ function Button({ className, variant = 'primary', ...props }: ButtonProps) {
 		</button>
 	);
 }
-
-export default Button;

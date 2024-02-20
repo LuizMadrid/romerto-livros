@@ -1,7 +1,7 @@
 import React from 'react';
-import BooksCarousel from './BooksCarousel';
+import { BooksCarousel } from './BooksCarousel';
 
-const DailyBooks = () => {
+export const DailyBooks = () => {
 	return (
 		<>
 			<div className='flex flex-col gap-16'>
@@ -16,5 +16,3 @@ const DailyBooks = () => {
 		</>
 	);
 };
-
-export default DailyBooks;

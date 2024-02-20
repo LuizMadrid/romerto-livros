@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { ModeToggle } from './ToggleTheme';
 // import Button from '@/components/Button';
 
-const ProfileDetails = () => {
+export const ProfileDetails = () => {
 	return (
 		<div className='flex items-center justify-end backdrop-blur-0'>
 			<div className='flex text-white gap-4 my-3'>
@@ -27,5 +27,3 @@ const ProfileDetails = () => {
 		</div>
 	);
 };
-
-export default ProfileDetails;

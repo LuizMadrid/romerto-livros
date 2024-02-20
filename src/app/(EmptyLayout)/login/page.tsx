@@ -1,21 +1,25 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+'use client';
 
-import Button from '@/components/common/Button';
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import { Button } from '@/components/common/Button';
 
 import { PiArrowBendUpLeftDuotone, PiGoogleLogoDuotone, PiFacebookLogoDuotone } from 'react-icons/pi';
 
-const Login = () => {
+export const Login = () => {
 	return (
-		<div className="flex w-screen h-screen bg-background-white dark:bg-background-dark">
+		<div className="flex w-screen h-screen">
 
 			<div className='flex flex-[50%]'>
 				<div className="absolute top-8 left-8">
-					<Link
-						href="/home"
-						className="text-base flex items-center justify-center gap-2 font-bold px-4 py-2 rounded-md text-colorPrimaryDarker dark:text-primaryWhite hover:bg-gray-400/20 transition-all hover:transition-all">
-						<PiArrowBendUpLeftDuotone /> Página Inicial
+					<Link href="/home" passHref>
+						<Button
+							variant='empty'
+							className="text-base flex items-center justify-center gap-2 font-bold px-4 py-2 rounded-md text-primaryDark dark:text-primaryWhite hover:bg-gray-400/20 transition-all hover:transition-all">
+							<PiArrowBendUpLeftDuotone /> Página Inicial
+						</Button>
 					</Link>
 				</div>
 
@@ -24,12 +28,14 @@ const Login = () => {
 
 					<div className="my-5 flex gap-4">
 						<Button 
-							variant='icon'>
+							variant='icon'
+							className='hover:text-primaryDark dark:hover:text-primaryWhite'>
 							<PiGoogleLogoDuotone className="text-xl 2sm:text-xl xl:text-3xl" />
 						</Button>
 
 						<Button 
-							variant='icon'>
+							variant='icon'
+							className='hover:text-primaryDark dark:hover:text-primaryWhite'>
 							<PiFacebookLogoDuotone className="text-xl 2sm:text-xl xl:text-3xl" />
 						</Button>
 					</div>
@@ -61,7 +67,7 @@ const Login = () => {
 			</div>
 			
 			<div className="flex flex-[50%] justify-center items-center">
-				<div className="h-full w-full relative overflow-hidden flex justify-center items-center flex-col rounded-l-[30rem] bg-gradient-to-br from-colorPrimaryLighter to-colorPrimaryDarker">
+				<div className="h-full w-full flex justify-center items-center flex-col rounded-l-full bg-gradient-to-br from-colorPrimaryLighter to-colorPrimaryDarker">
 
 					<h1 className="text-4xl font-semibold text-white">
 						Seja Bem-vindo de volta!
@@ -72,10 +78,12 @@ const Login = () => {
 					</p>
 
 					<Image
-						src="/circle-scatter.svg"
-						fill
+						src="/Logo Branco.png"
+						width={360}
+						height={360}
+						quality={100}
 						alt="Logo"
-						className="opacity-20"
+						className="absolute opacity-15"
 					/>
 				</div>
 			</div>
@@ -84,4 +92,3 @@ const Login = () => {
 
 	);
 };
-export default Login;

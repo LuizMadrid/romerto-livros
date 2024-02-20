@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Button from '@/components/common/Button';
+import { Button } from '@/components/common/Button';
 
 interface BooksInfoProps {
 	name: string;
@@ -12,7 +12,7 @@ interface BooksInfoProps {
 	edition: number;
 }
 
-const BooksContainer = ({ name, image, sinopse, date, edition }: BooksInfoProps) => {
+export const BooksContainer = ({ name, image, sinopse, date, edition }: BooksInfoProps) => {
 	return (
 		<>
 			<div className="flex w-[28rem] h-72 justify-between px-2">
@@ -44,5 +44,3 @@ const BooksContainer = ({ name, image, sinopse, date, edition }: BooksInfoProps)
 		</>
 	);
 };
-
-export default BooksContainer;

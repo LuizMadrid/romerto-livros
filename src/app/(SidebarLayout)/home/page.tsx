@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import DailyBooks from './components/DailyBooks';
+import { DailyBooks } from './_components/DailyBooks';
 
 const Home = () => {
 	return (

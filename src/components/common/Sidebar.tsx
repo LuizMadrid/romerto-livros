@@ -2,7 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Button from './Button';
+import { Button } from './Button';
 import { Separator } from '../ui/separator';
 
 import { PiCoffeeDuotone, PiBooksDuotone, PiHouseDuotone, PiUserDuotone, PiInfoDuotone, PiNutDuotone, PiClockCounterClockwiseDuotone } from 'react-icons/pi';
@@ -19,14 +19,14 @@ const Sidebar = () => {
 							href={'/'}
 							className='flex justify-center items-center pt-2 gap-2'>
 							<Image 
-								src="/Logo Closed.png" 
+								src="/Logo.png" 
 								height={36} 
 								width={36} 
 								alt='Website Logo'
 							/>
 							<Image 
 								className='hidden group-hover/sidebar:block'
-								src="/Logo.png" 
+								src="/Logo (Letra).png" 
 								height={96} 
 								width={96} 
 								alt='Website Logo'

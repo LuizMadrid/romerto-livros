@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CardContainer from './components/CardContainer';
-import AddComment from './components/AddComment';
+import { CardContainer } from './_components/CardContainer';
+import { AddComment } from './_components/AddComment';
 
 const page = () => {
 	return (

@@ -7,7 +7,7 @@ interface CopyButtonProps {
   textToCopy: string;
 }
 
-const CopyButton = ({ children, textToCopy }: CopyButtonProps) => {
+export const CopyButton = ({ children, textToCopy }: CopyButtonProps) => {
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(textToCopy);
@@ -19,5 +19,3 @@ const CopyButton = ({ children, textToCopy }: CopyButtonProps) => {
 		</div>
 	);
 };
-
-export default CopyButton;

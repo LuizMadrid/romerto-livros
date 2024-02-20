@@ -1,5 +1,5 @@
 import React from 'react';
-import CallBooksAPI from './CallBooksAPI';
+import { CallBooksAPI } from './CallBooksAPI';
 
 import {
 	Carousel,
@@ -8,7 +8,7 @@ import {
 	CarouselPrevious,
 } from '@/components/ui/carousel';
 
-const BooksCarousel = () => {
+export const BooksCarousel = () => {
 	return (
 		<>
 			<Carousel 
@@ -27,5 +27,3 @@ const BooksCarousel = () => {
 		</>
 	);
 };
-
-export default BooksCarousel;

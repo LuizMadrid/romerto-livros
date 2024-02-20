@@ -3,7 +3,7 @@ import React from 'react';
 import { Toggle } from '@/components/ui/toggle';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardTitle, CardDescription, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
-import CopyButton from '@/components/common/CopyButton';
+import { CopyButton } from '@/components/common/CopyButton';
 
 import { FaThumbsDown, FaThumbsUp } from 'react-icons/fa6';
 import { PiBookmarkSimpleFill, PiLinkBold } from 'react-icons/pi';
@@ -17,7 +17,7 @@ interface CardInfoProps {
 	publicDate: string;
 }
 
-const CardContainer = ({ image, initials, name, id, comment, publicDate }: CardInfoProps) => {
+export const CardContainer = ({ image, initials, name, id, comment, publicDate }: CardInfoProps) => {
 	return (
 		<>
 			<Card className='border-primaryGray backdrop:blur-2xl bg-primaryGray/10 dark:bg-primaryGray/15 max-w-3xl cursor-default'>
@@ -70,5 +70,3 @@ const CardContainer = ({ image, initials, name, id, comment, publicDate }: CardI
 		</>
 	);
 };
-
-export default CardContainer;

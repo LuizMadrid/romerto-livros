@@ -3,11 +3,11 @@ import React from 'react';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
-import Button from '@/components/common/Button';
+import { Button } from '@/components/common/Button';
 
 import { PiPaperPlaneRightDuotone } from 'react-icons/pi';
 
-const AddComment = () => {
+export const AddComment = () => {
 	return (
 		<Card className='flex gap-2 border-primaryGray backdrop:blur-2xl bg-primaryGray/10 dark:bg-primaryGray/15 max-w-3xl mb-12'>
 			<CardContent className='pt-6 pr-0 w-full'>
@@ -25,5 +25,3 @@ const AddComment = () => {
 		</Card>
 	);
 };
-
-export default AddComment;
